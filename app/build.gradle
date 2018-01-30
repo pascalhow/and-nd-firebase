@@ -41,10 +41,16 @@ dependencies {
 
     ext.appCompatVersion = '26.1.0'
     ext.glideVersion = '3.7.0'
+    ext.firebaseVersion = '11.8.0'
 
     compile "com.android.support:design:$appCompatVersion"
     compile "com.android.support:appcompat-v7:$appCompatVersion"
 
     // Displaying images
     compile "com.github.bumptech.glide:glide:$glideVersion"
+
+    //  Real time database
+    compile "com.google.firebase:firebase-database:$firebaseVersion"
 }
+
+apply plugin: 'com.google.gms.google-services'
