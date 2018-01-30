@@ -42,6 +42,7 @@ dependencies {
     ext.appCompatVersion = '26.1.0'
     ext.glideVersion = '3.7.0'
     ext.firebaseVersion = '11.8.0'
+    ext.firebaseUIAuthVersion = '3.2.1'
 
     compile "com.android.support:design:$appCompatVersion"
     compile "com.android.support:appcompat-v7:$appCompatVersion"
@@ -51,6 +52,10 @@ dependencies {
 
     //  Real time database
     compile "com.google.firebase:firebase-database:$firebaseVersion"
+
+    //  Firebase Authentication
+    compile "com.google.firebase:firebase-auth:$firebaseVersion"
+    compile "com.firebaseui:firebase-ui-auth:$firebaseUIAuthVersion"
 }
 
 apply plugin: 'com.google.gms.google-services'
